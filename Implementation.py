@@ -1,7 +1,7 @@
 tasks_input = input("Enter the tasks and separate them by commas: ")
 tasks = tasks_input.split(",")  
 team_members = int(input("Enter the number of team members: "))
-max_input = input("Enter max tasks per member (leave blank if not specified): ")
+max_input = input("Enter max tasks per member (leave it blank if not specified): ")
 
 
 max_tasks = None
@@ -11,7 +11,7 @@ if max_input:
 
 error_message = ""
 if not tasks or team_members <= 0:
-    error_message = "Invalid input. Please provide valid tasks and team members."
+    error_message = "Invalid input. Provide valid tasks and team members."
 elif max_tasks:  
     required = (len(tasks) + max_tasks - 1) // max_tasks  
     if required > team_members:
