@@ -1,6 +1,6 @@
 tasks_input = input("Enter the tasks and separate them by commas: ")
 tasks = tasks_input.split(",")  
-team_members = int(input("Enter the number of team members: "))
+team_members = int(input("Enter the number of your team members: "))
 max_input = input("Enter max tasks per member (leave it blank if not specified): ")
 
 
